@@ -10,7 +10,7 @@
 ---------- ---------- ---------- ---------- ---------- */
 
 /* 250628 fonts.css에 폰트 추가 */
-@import url("css/www/fonts.css");
+@import url("./css/www/fonts.css");
 
 /* 250628 지능형검색 css 추가 */
-@import url("css/www/chatbot.css");
+@import url("./css/www/chatbot.css");
