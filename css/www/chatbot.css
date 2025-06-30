@@ -60,17 +60,18 @@
     --bd : #CDD9E7;
 }
 
+#chat_container{max-width:1400px;margin:0 auto;padding:22px 0;font-family: var(--font1);}
+
 #chat_container *{scrollbar-width: none;/* Firefox */-ms-overflow-style: none;/* IE, Edge */}
 #chat_container *::-webkit-scrollbar{display: none;}
 
-#chat_container{max-width:1400px;margin:0 auto;padding:22px 0;font-family: var(--font1);}
 .chatbox{display: flex;align-items: center;justify-content: center;transition: all 0.3s ease;min-height:80vh;border:1px solid var(--bd);background: var(--bg1); border-radius: 30px;padding:48px;box-sizing: border-box;}
 .chatbox > .inner{max-width: 768px;width:100%;display: flex; align-items: center; justify-content: center;flex-direction: column;}
 
 /* chati main */
-.chatbox .title{font-family: var(--font2);color: #333;font-size:32px;}
-.chatbox .title .logo{ background: linear-gradient(92deg, #1C6FD7 65.3%, #194DBD 99.7%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;position: relative;}
-.chatbox .title .logo::after{content:"\F569";font-family:var(--ifont); color: #FFC300;transform: scaleX(-1);background: none;-webkit-background-clip: initial;-webkit-text-fill-color: initial;display:inline-block;position:absolute;top:-20px;right:-20px;font-size: 20px;}
+.chatbox h1.title{font-family: var(--font2);color: #333;font-size:32px;}
+.chatbox h1.title .logo{ background: linear-gradient(92deg, #1C6FD7 65.3%, #194DBD 99.7%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;position: relative;}
+.chatbox h1.title .logo::after{content:"\F569";font-family:var(--ifont); color: #FFC300;transform: scaleX(-1);background: none;-webkit-background-clip: initial;-webkit-text-fill-color: initial;display:inline-block;position:absolute;top:-20px;right:-20px;font-size: 20px;}
 .chatbox .sub_tit{font-size:19px;color: #777;}
 
 .chatbox .input_section{width:100%;padding:32px;margin:48px 0 16px 0;background: rgba(var(--white));box-shadow:  0px 0px 10px 0px rgba(112, 131, 156, 0.20); border-radius: 30px; position: relative; box-sizing: border-box;}
@@ -111,5 +112,40 @@
 }
 
 /* chati 답변내용 */
-.chat_content .reference_list{display: none;}
-.chat_content .reference_list.open{display: block;}
+.chat_content .answer_contents{padding:20px 0 44px 0; color: var(--main-color);font-size:16px;}
+.chat_content .answer_contents > *:not(:last-child) {margin-bottom:16px;}
+.chat_content .answer_contents .doc_list dd{font-weight: 600;}
+.chat_content .answer_contents .info_location{background: var(--bg2);padding:8px 16px;display: inline-flex;align-items: center;gap: 24px;border-radius: 10px;}
+.chat_content .answer_contents .info_location p{color: var(--primary);font-weight: 600; position: relative;}
+.chat_content .answer_contents .info_location .tit{display: flex;align-items: center;}
+.chat_content .answer_contents .info_location .tit::before{content:"";background: url(/images/www/sub/ico_infolocation.png)0 0 no-repeat;width:16px;height:16px;margin-right:10px;}
+.chat_content .answer_contents .info_location > ul {display: flex;align-items: center;}
+.chat_content .answer_contents .info_location > ul li:not(:last-child){position: relative;display: flex;align-items: center;gap: 8px;}
+.chat_content .answer_contents .info_location > ul li:not(:last-child)::after{content:"\EA6E";color: var(--main-color);font-family: var(--ifont);margin-right:8px;font-size:18px;}
+
+.chat_content .response_controls{display: flex;justify-content: space-between;align-items: center;}
+.chat_content .disclaimer.ai{font-size: 14px;color: var(--sub-color);display: flex;align-items: center;}
+.chat_content .disclaimer.ai::before{content:"";background:url(/images/www/sub/ico_feedback.png)0 0 no-repeat;width:14px;height:14px;background-size: 100%;margin-right: 5px;}
+
+/* feedback ico */
+.feedback_btn {display: flex;}
+.feedback_btn .btn.ico{border:0;border-radius: 8px;height:32px;width:32px;padding:5px;display:inline-flex;align-items: center;justify-content: center;font-size:0;line-height: 0; position:relative;background: none;}
+.feedback_btn .btn:not(:last-child){margin-right: 10px;}
+.feedback_btn .btn.ico::before{font-family: var(--ifont);font-size: 18px;color: var(--primary);}
+.feedback_btn .btn.copy.ico{background: var(--bg3);}
+.feedback_btn .btn.copy.ico::before{content:"\ECD5";}
+.feedback_btn .btn.like.ico::before{content:"\F207";}
+.feedback_btn .btn.like.ico.active::before{content:"\F206";}
+.feedback_btn .btn.dislike.ico::before{content:"\F205";}
+.feedback_btn .btn.dislike.ico.active::before{content:"\F204";}
+
+/* 출처 및 연관질의 */
+.reference_section{padding: 0 0 25px 0;}
+.reference_section .btn.toggle_trigger{margin-bottom:10px ;background: var(--primary);color: rgba(var(--white)); padding: 5px 10px;border-radius: 5px;font-size: 14px;font-weight: 600;}
+.reference_section .reference_list{display: none;}
+.reference_section .reference_list.open{display: block;}
+.reference_section .reference_list li{display: flex;align-items: center;background:var(--bg2);padding:16px;border-radius: 10px;gap: 24px}
+.reference_section .reference_list li:not(:last-child){margin-bottom: 10px;}
+.reference_section .reference_list .category{font-weight: 600;}
+.reference_section .reference_list .download_link{margin-left: auto;font-weight: 600;display: flex!important;;align-items: center!important;font-size: 14px!important;}
+.reference_section .reference_list .download_link::before{content: "\EEB2";font-family: var(--ifont);margin-right: 10px;}
