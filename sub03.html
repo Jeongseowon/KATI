@@ -426,13 +426,23 @@
                         <p class="ai disclaimer">본 응답은 AI 기반으로 생성된 내용이며, 실제 정보와 다를 수 있으니 반드시 공식 자료를 함께 확인해 주세요.</p>
                       </div>
                       <!-- //response_controls -->
+                      <div class="feedback_contents">
+                        <p>불만족한 이유는 무엇인가요?</p>
+                        <div class="box">
+                          <button type="button" class="btn">요약된 내용이 마음에 들지 않아요.</button>
+                          <button type="button" class="btn">질문과 상관없는 결과예요.</button>
+                          <button type="button" class="btn">답변의 내용이 안전하지 않거나 문제의 소지가 있어요.</button>
+                          <button type="button" class="btn more ico" id="openFeedbackModalBtn">더 자세한 내용 제출</button>
+                        </div>
+                      </div>
+                      <!-- //feedback_contents -->
                     </div>
                     <!-- //answer_contents 답변본문-->
 
                     <!-- 출처 -->
                     <div class="reference_section is_source">
                       <button class="btn toggle_trigger" type="button" onclick="toggleOpen(this)">출처</button>
-                      <ul class="reference_list open">
+                      <ul class="reference_list">
                         <li>
                           <span class="category">수출뉴스 > 해외시장동향</span>
                           <span class="title">[202409-45] 인도네시아 라면수프 보고서.hwp</span>
@@ -450,7 +460,7 @@
                     <!-- 연관질의 -->
                     <div class="reference_section is_related">
                       <button class="btn toggle_trigger" type="button" onclick="toggleOpen(this)">연관질의</button>
-                      <ul class="reference_list open">
+                      <ul class="reference_list">
                         <li>
                           <a href="#">인도네시아 전통 음식에 대해 알려주세요.</a>
                         </li>
@@ -476,6 +486,7 @@
               </div>
               <!-- //inner -->
             </div>
+            <!-- //chatbot -->
           </div>
           <!-- //chat_contatiner -->
         </div>
@@ -484,6 +495,28 @@
       <!-- //container -->
     </div>
     <!-- //wrap -->
+
+    <!-- modal 평점 -->
+    <div id="feedbackModal" class="modal" style="display: none">
+      <div class="modal_overlay"></div>
+      <div class="modal_content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h2 id="modalTitle">피드백 제출</h2>
+        <p>평점을 선택해주세요.</p>
+        <div class="star_rating" id="starRating">
+          <span data-value="1" class="star" role="button" aria-label="1점" tabindex="0">☆</span>
+          <span data-value="2" class="star" role="button" aria-label="2점" tabindex="0">☆</span>
+          <span data-value="3" class="star" role="button" aria-label="3점" tabindex="0">☆</span>
+          <span data-value="4" class="star" role="button" aria-label="4점" tabindex="0">☆</span>
+          <span data-value="5" class="star" role="button" aria-label="5점" tabindex="0">☆</span>
+        </div>
+        <textarea placeholder="자유롭게 내용을 작성해주세요." rows="5" style="width: 100%; margin-top: 1em"></textarea>
+        <div>
+          <button type="button" id="cancelModalBtn">취소</button>
+          <button type="button" id="submitModalBtn">제출</button>
+        </div>
+      </div>
+    </div>
+    <!-- //modal 평점 -->
 
     <!-- footer -->
     <div id="footer">
