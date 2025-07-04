@@ -60,6 +60,8 @@
     --bd : #CDD9E7;
 }
 
+#charti{box-sizing: border-box;background: var(--primary);color: rgba(var(--white));font-weight: 600;font-size: 18px;padding:5px 7px;border-radius: 30px;}
+
 #chat_container{max-width:1400px;margin:0 auto;padding:22px 0;font-family: var(--font1);}
 
 #chat_container *{scrollbar-width: none;/* Firefox */-ms-overflow-style: none;/* IE, Edge */}
@@ -159,3 +161,19 @@
 .reference_section .reference_list .category{font-weight: 600;}
 .reference_section .reference_list .download_link{margin-left: auto;font-weight: 600;display: flex!important;;align-items: center!important;font-size: 14px!important;}
 .reference_section .reference_list .download_link::before{content: "\EEB2";font-family: var(--ifont);margin-right: 10px;}
+
+/* 모달 */
+.modal{position: fixed;top:0;left:0;background:rgba(0,0,0,0.6);display: flex;align-items: center;justify-content: center; width:100%;height: 100%;z-index: 999;}
+.modal .modal_content{width:100%;max-width: 768px;background: var(--bg2);border-radius: 20px;padding:24px;box-sizing: border-box;text-align: center;}
+.modal .modal_title{font-size: 0;overflow: hidden;}
+.modal .modal_content > b{font-size: 21px;color: var(--main-color);font-weight: 600;}
+.modal .modal_content > p{font-size: var(--main-color);font-size: 16px;padding:20px 0;}
+.modal .star_rating{display: flex;align-items: center;justify-content: center;gap: 6px;margin-top: 16px;}
+.modal .star_rating .star{font-size: 0;width: 32px;height: 32px;background: url(/images/www/sub/ico_star_empty.png)0 0 no-repeat;}
+.modal .star_rating .star.filled{background-image: url(/images/www/sub/ico_star.png);}
+.modal textarea{height:140px;border: 1px solid var(--secondary);background: rgba(var(--white));padding:16px;box-sizing: border-box;border-radius: 8px;color: var(--gray60);resize: none;}
+.modal textarea:focus{border: 1px solid var(--primary);outline: none;}
+.modal .btn_wrap {display: flex;align-items: center;justify-content: flex-end;margin-top:20px;gap: 8px;}
+.modal .btn_wrap .btn{border: 0;background: var(--secondary);min-width: 60px;height: 40px;display: flex;align-items: center;justify-content: center;font-weight: 600;border-radius: 8px;font-size: 16px;}
+.modal .btn_wrap .btn.submit{background: var(--primary);color: rgba(var(--white));}
+.modal .feedback_current{display: none;border: 1px solid rgba(var(--white));color: rgba(var(--white));border-radius: 8px;padding: 24px;font-weight: 500;font-size: 19px;}

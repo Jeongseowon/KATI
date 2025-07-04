@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="google-site-verification" content="Bg7UHgdh7d3H8Ynf0sDOjLh_6crPbn5OYSQZM2yDEvc" />
-    <meta name="description" content="aT한국농수산식품유통공사에서 운영하는 농식품 수출정보 홈페이지 수출입통계, 국가정보, 품목정보, 해외 식품첨가물 규정, 비관세장벽, 통관거부사례, 소비트렌드 등 제공" />
-    <meta property="og:title" content="카티" />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<html lang="en"><head>
+    <meta name="google-site-verification" content="Bg7UHgdh7d3H8Ynf0sDOjLh_6crPbn5OYSQZM2yDEvc">
+    <meta name="description" content="aT한국농수산식품유통공사에서 운영하는 농식품 수출정보 홈페이지 수출입통계, 국가정보, 품목정보, 해외 식품첨가물 규정, 비관세장벽, 통관거부사례, 소비트렌드 등 제공">
+    <meta property="og:title" content="카티">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <title>수출입 개황 - KATI 농식품수출정보</title>
 
-    <link href="https://www.kati.net/images/www/icon/favicon.ico" rel="shortcut icon" />
-    <link href="https://www.kati.net/css/www/import.css?v=1.3" rel="stylesheet" />
-    <link href="/css/www/import.css" rel="stylesheet" />
-    <script async="" src="//fs.bizspring.net/fs4/logger.v4.1.js"></script>
+    <link href="https://www.kati.net/images/www/icon/favicon.ico" rel="shortcut icon">
+<link href="https://www.kati.net/css/www/import.css?v=1.3" rel="stylesheet">
+    <!-- ChaTi 지능형대화 css 추가 -->
+    <link href="css/www/import.css?v=1.4" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-9HCW5V7CXF&amp;cx=c&amp;gtm=45je5710v888559234za200&amp;tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104684208~104684211~104718208~104839054~104839056~104885889~104885891"></script><script async="" src="//fs.bizspring.net/fs4/logger.v4.1.js"></script>
     <script async="" src="//fs.bizspring.net/fs4/bstrk.1.js"></script>
     <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-1C6GSRP5Z8&amp;cx=c&amp;gtm=45je56p1v895426827za200&amp;tag_exp=101509157~102015666~103116026~103200004~103233427~103308216~103308218~103351869~103351871~104684208~104684211~104718208~104784387~104784389"></script>
     <script src="https://www.kati.net/js/www/jquery-3.6.0.js?v=1.0"></script>
@@ -50,7 +49,7 @@
         <div class="wrap">
           <h1 class="logo" onclick="location.href='/index.do'">
             <a href="https://www.kati.net/index.do">
-              <img src="https://www.kati.net/images/www/common/img_logo.png" alt="kati 농수산식품수출지원정보" style="width: 225px; height: 30px" />
+              <img src="https://www.kati.net/images/www/common/img_logo.png" alt="kati 농수산식품수출지원정보" style="width: 225px; height: 30px">
             </a>
           </h1>
           <div class="gnb_wrap">
@@ -337,6 +336,8 @@
                     </div>
                   </div>
                 </li>
+                 <!-- ChaTi 수정 지능형대화  -->
+                <li class="ChaTi"> <a href="sub01.html" target="_self" id="ChaTi" role="button">지능형대화</a></li>
               </ul>
             </nav>
           </div>
@@ -346,8 +347,8 @@
             <div class="sch_pop">
               <form action="https://www.kati.net/search.do" id="floatSearchForm" name="floatSearchForm" method="post" onsubmit="return floatSearchCheck()">
                 <div class="sch_box">
-                  <input type="hidden" name="searchOrder" value="DATE" />
-                  <input type="text" id="floatKeyword" name="keyword" placeholder="검색어를 입력하세요." autocomplete="off" />
+                  <input type="hidden" name="searchOrder" value="DATE">
+                  <input type="text" id="floatKeyword" name="keyword" placeholder="검색어를 입력하세요." autocomplete="off">
                   <button class="btn_sch">검색하기</button>
                 </div>
               </form>
@@ -366,14 +367,14 @@
           <div class="wrap">
             <h2 class="page-title" style="position: relative; left: -150px">지능형 대화</h2>
             <span class="page-location" style="position: relative; left: 1190px; top: -25px">
-              <a href="https://www.kati.net/index.do"><img src="https://www.kati.net/images/www/icon/icon_home_11x11.png" alt="홈" /></a>
+              <a href="https://www.kati.net/index.do"><img src="https://www.kati.net/images/www/icon/icon_home_11x11.png" alt="홈"></a>
               <a href="#">지능형 대화</a>
             </span>
           </div>
         </div>
         <!-- //상단 -->
 
-        <!-- contents sub02 지능형대화 내용 시작 -->
+        <!-- contents ChaTi sub02 지능형대화 내용 시작 -->
         <div id="contents" class="inner" tabindex="0" style="width: 100%">
           <div id="chat_container">
             <div class="chatbox active">
@@ -519,5 +520,6 @@
       </div>
       <!-- // inner -->
     </div>
-  </body>
-</html>
+  
+
+</body></html>
