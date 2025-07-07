@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* ---------- ---------- ---------- ---------- ----------
+최종 수정일 : 2018.01.08
+
+알림 : 
+---------- ---------- ---------- ---------- ---------- */
+
+/* @font-face
+---------- ---------- ---------- ---------- ---------- */
+
+/* 250628 font 추가  */
+@import url("../../lib/remixicon/remixicon.css");
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../..//fonts/www/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard400';
+    src: url('../../fonts/www/Pretendard/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard500';
+    src: url('../..//fonts/www/Pretendard/Pretendard-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard600';
+    src: url('../../fonts/www/Pretendard/Pretendard-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

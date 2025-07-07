@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="google-site-verification" content="Bg7UHgdh7d3H8Ynf0sDOjLh_6crPbn5OYSQZM2yDEvc" />
+    <meta name="description" content="aT한국농수산식품유통공사에서 운영하는 농식품 수출정보 홈페이지 수출입통계, 국가정보, 품목정보, 해외 식품첨가물 규정, 비관세장벽, 통관거부사례, 소비트렌드 등 제공" />
+    <meta property="og:title" content="카티" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <title>수출입 개황 - KATI 농식품수출정보</title>
+
+    <link href="https://www.kati.net/images/www/icon/favicon.ico" rel="shortcut icon" />
+<link href="https://www.kati.net/css/www/import.css?v=1.3" rel="stylesheet" />
+    <!-- ChaTi 지능형대화 css 추가 -->
+    <link href="/css/import.css" rel="stylesheet" />
+    <script async="" src="//fs.bizspring.net/fs4/logger.v4.1.js"></script>
+    <script async="" src="//fs.bizspring.net/fs4/bstrk.1.js"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-1C6GSRP5Z8&amp;cx=c&amp;gtm=45je56p1v895426827za200&amp;tag_exp=101509157~102015666~103116026~103200004~103233427~103308216~103308218~103351869~103351871~104684208~104684211~104718208~104784387~104784389"></script>
+    <script src="https://www.kati.net/js/www/jquery-3.6.0.js?v=1.0"></script>
+    <script src="https://www.kati.net/js/www/jquery-ui.js?v=1.1"></script>
+    <script src="https://www.kati.net/js/www/slick.js?v=1.0"></script>
+
+    <script src="https://www.kati.net/js/www/dotdotdot.js?v=1.0" async=""></script>
+    <script src="https://www.kati.net/js/www/selectize.js?v=1.0" async=""></script>
+    <script src="https://www.kati.net/js/www/html2canvas.js?v=1.0" async=""></script>
+    <script src="https://www.kati.net/js/www/jspdf.min.js?v=1.0" async=""></script>
+
+    <script src="https://www.kati.net/js/www/function.js?v=1.4" async=""></script>
+    <!-- //ChaTi 지능형 대화 js추가 -->
+    <script src="/js/sub/chatbot.js"></script>
+
+    <!-- Google tag (gtag.js) GA4 09 KATI 2023.01. -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9HCW5V7CXF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9HCW5V7CXF", { content_group: "KATI" });
+      gtag("config", "G-1C6GSRP5Z8", { content_group: "KATI" });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 상단 -->
+      <div id="accessibility">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+      </div>
+      <!-- header -->
+      <header id="header" style="height: 100px" class="">
+        <div class="wrap">
+          <h1 class="logo" onclick="location.href='/index.do'">
+            <a href="https://www.kati.net/index.do">
+              <img src="https://www.kati.net/images/www/common/img_logo.png" alt="kati 농수산식품수출지원정보" style="width: 225px; height: 30px" />
+            </a>
+          </h1>
+          <div class="gnb_wrap">
+            <nav id="gnb" style="height: 100px">
+              <ul class="depth1">
+                <!-- 각 메뉴 들어갔을때 depth1>li에 current 클래스 추가 (기존에 있는것) -->
+
+                <li>
+                  <a href="/board/boardList.do">뉴스</a>
+
+                  <div class="depth2_wrap">
+                    <div class="inner">
+                      <div class="title">
+                        <h2>뉴스</h2>
+                      </div>
+                      <ul class="depth2" id="menu_dept2_33">
+                        <li class="">
+                          <a href="/board/boardList.do?menu_dept3=375" target="">공지사항</a>
+                          <ul class="depth3" id="menu_dept3_34">
+                            <li class=""><a href="/board/boardList.do?menu_dept3=375" target="">공지사항</a></li>
+                            <li class=""><a href="/board/pressKitList.do?menu_dept3=360" target="">보도자료</a></li>
+                            <li class=""><a href="/board/overseasMarketCustomizedRptList.do?menu_dept3=51" target="">농수산식품 수출 Zoom In</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/board/exportNewsList.do" target="">수출뉴스</a>
+                          <ul class="depth3" id="menu_dept3_35">
+                            <li class=""><a href="/board/exportNewsList.do" target="">해외시장동향</a></li>
+                            <li class=""><a href="/board/tradeBarrierList.do?menu_dept3=75" target="">비관세장벽 뉴스레터</a></li>
+                            <li class=""><a href="/board/cardNewsList.do?menu_dept3=56" target="">카드뉴스</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="#" target="">국내뉴스</a>
+                          <ul class="depth3" id="menu_dept3_409">
+                            <li class=""><a href="https://www.atfis.or.kr/home/board/FB0002.do" target="_blank">국내시장동향</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="">
+                  <a href="/product/basisInfo.do">품목</a>
+
+                  <div class="depth2_wrap">
+                    <div class="inner">
+                      <div class="title">
+                        <h2>품목</h2>
+                      </div>
+                      <ul class="depth2" id="menu_dept2_37">
+                        <li class="">
+                          <a href="/product/newBasisInfo.do?lcdCode=MD147" target="">채소</a>
+                          <ul class="depth3" id="menu_dept3_MD001">
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD147" target="">파프리카</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD149" target="">딸기</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD150" target="">토마토</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/product/newBasisInfo.do?lcdCode=MD151" target="">과실/임산물</a>
+                          <ul class="depth3" id="menu_dept3_MD002">
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD151" target="">배</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD152" target="">유자(차)</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD153" target="">사과</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD154" target="">포도</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD157" target="">밤</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD158" target="">표고버섯</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD159" target="">단감</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/product/newBasisInfo.do?lcdCode=MD160" target="">신선기타</a>
+                          <ul class="depth3" id="menu_dept3_MD003">
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD160" target="">인삼</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD161" target="">김치</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD162" target="">새송이버섯</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD163" target="">팽이버섯</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD164" target="">쌀</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD165" target="">백합</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD166" target="">장미</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD232" target="">국화</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/product/newBasisInfo.do?lcdCode=MD168" target="">가공</a>
+                          <ul class="depth3" id="menu_dept3_MD004">
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD168" target="">과자</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD169" target="">라면</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD170" target="">음료</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD172" target="">막걸리</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD173" target="">커피(조제품)</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD174" target="">소스</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD175" target="">유제품</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD1442" target="">즉석식품</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD1443" target="">영유아식품</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD1444" target="">대체식품</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD1445" target="">홍삼</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD1446" target="">주류</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/product/newBasisInfo.do?lcdCode=MD176" target="">수산물</a>
+                          <ul class="depth3" id="menu_dept3_MD005">
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD176" target="">참치</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD177" target="">넙치</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD178" target="">김</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD180" target="">전복</a></li>
+                            <li class=""><a href="/product/basisInfo.do?lcdCode=MD181" target="">굴</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="">
+                  <a href="/nation/newBasisInfo.do?lcdCode=MD182">국가</a>
+
+                  <div class="depth2_wrap">
+                    <div class="inner">
+                      <div class="title">
+                        <h2>국가</h2>
+                      </div>
+                      <ul class="depth2" id="menu_dept2_38">
+                        <li class="">
+                          <a href="/nation/newBasisInfo.do?lcdCode=MD182" target="">아시아</a>
+                          <ul class="depth3" id="menu_dept3_MD006">
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD182" target="">일본</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD183" target="">중국</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD184" target="">홍콩</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD185" target="">대만</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD186" target="">베트남</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD187" target="">태국</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD188" target="">인도네시아</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD189" target="">필리핀</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD190" target="">싱가포르</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD191" target="">말레이시아</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD192" target="">인도</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD193" target="">카자흐스탄</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD981" target="">우즈베키스탄</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD621" target="">마카오</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD223" target="">미얀마</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD225" target="">캄보디아</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD620" target="">라오스</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD222" target="">몽골</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/nation/newBasisInfo.do?lcdCode=MD207" target="">미주</a>
+                          <ul class="depth3" id="menu_dept3_MD011">
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD207" target="">미국</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD208" target="">캐나다</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD209" target="">멕시코</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD210" target="">브라질</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD624" target="">아르헨티나</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD230" target="">칠레</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD228" target="">페루</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD229" target="">콜롬비아</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/nation/newBasisInfo.do?lcdCode=MD194" target="">유럽</a>
+                          <ul class="depth3" id="menu_dept3_MD007">
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD194" target="">영국</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD195" target="">이탈리아</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD196" target="">네덜란드</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD197" target="">스페인</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD198" target="">러시아</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD199" target="">프랑스</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD227" target="">독일</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD226" target="">폴란드</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD627" target="">튀르키예</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/nation/newBasisInfo.do?lcdCode=MD205" target="">오세아니아</a>
+                          <ul class="depth3" id="menu_dept3_MD010">
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD205" target="">호주</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD206" target="">뉴질랜드</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/nation/newBasisInfo.do?lcdCode=MD200" target="">중동/아프리카</a>
+                          <ul class="depth3" id="menu_dept3_MD008">
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD1441" target="">사우디아라비아</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD200" target="">UAE</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD202" target="">이란</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD204" target="">남아프리카공화국</a></li>
+                            <li class=""><a href="/nation/newBasisInfo.do?lcdCode=MD271" target="">나이지리아</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="">
+                  <a href="/institution/institutionInforMation.do">통관</a>
+
+                  <div class="depth2_wrap">
+                    <div class="inner">
+                      <div class="title">
+                        <h2>통관</h2>
+                      </div>
+                      <ul class="depth2" id="menu_dept2_39">
+                        <li class="">
+                          <a href="/customs/customsList.do" target="">비관세장벽</a>
+                          <ul class="depth3" id="menu_dept3_41">
+                            <li class=""><a href="/institution/institutionInforMation.do" target="">통관정보</a></li>
+                            <li class=""><a href="/customs/customsList.do" target="">통관문제사례</a></li>
+                            <li class=""><a href="/board/trendReportList.do" target="">동향보고서</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/additive/additiveList.do" target="">식품첨가물/유해물질</a>
+                          <ul class="depth3" id="menu_dept3_388">
+                            <li class=""><a href="/additive/additiveList.do" target="">식품첨가물/유해물질DB</a></li>
+                            <li class=""><a href="/board/foodAdditive.do?menu_dept3=247" target="">식품첨가물/유해물질 규정</a></li>
+                          </ul>
+                        </li>
+                        <li class=""><a href="/api/agchmSafeManual.do" target="">농약안전사용지침</a></li>
+                        <li class=""><a href="https://eminwon.qia.go.kr/intro/ipstInfo/list.jsp?show=Y " target="_blank">동물수출검역정보</a></li>
+                        <li class=""><a href="http://www.qia.go.kr/listWebQia3WGJYYQ.do?clear=1 " target="_blank">식물수출검역정보</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="active">
+                  <a href="/board/reportORpubilcationList.do">자료</a>
+
+                  <div class="depth2_wrap">
+                    <div class="inner">
+                      <div class="title">
+                        <h2>자료</h2>
+                      </div>
+                      <ul class="depth2" id="menu_dept2_47">
+                        <li class="">
+                          <a href="/board/reportORpubilcationList.do" target="">보고서</a>
+                          <ul class="depth3" id="menu_dept3_49">
+                            <li class=""><a href="/board/etcList.do?menu_dept3=53" target="">이슈별조사</a></li>
+                            <li class=""><a href="/board/nationReportList.do?menu_dept3=367" target="">국가별조사</a></li>
+                            <li class=""><a href="/board/etcReportList.do?menu_dept3=368" target="">품목별조사</a></li>
+                            <li class=""><a href="/board/globalVillageReportList.do?menu_dept3=52" target="">기타보고서</a></li>
+                            <li class=""><a href="/board/externalReportList.do?menu_dept3=301" target="">외부발간보고서</a></li>
+                          </ul>
+                        </li>
+                        <li class=""><a href="/board/pubilshedMaterialsList.do" target="">발간책자</a></li>
+                        <li class="">
+                          <a href="/board/videoList.do?menu_dept2=59" target="">동영상</a>
+                          <ul class="depth3" id="menu_dept3_59"></ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="current">
+                  <a href="/statistics/dashBoard.do">통계</a>
+
+                  <div class="depth2_wrap">
+                    <div class="inner">
+                      <div class="title">
+                        <h2>통계</h2>
+                      </div>
+                      <ul class="depth2" id="menu_dept2_60">
+                        <li class="current"><a href="/statistics/dashBoard.do" target="">수출입 개황</a></li>
+                        <li class="">
+                          <a href="/statistics/monthlyPerformanceByProduct.do" target="">월별 수출입</a>
+                          <ul class="depth3" id="menu_dept3_61">
+                            <li class=""><a href="/statistics/monthlyPerformanceByProduct.do" target="">월별품목별 실적</a></li>
+                            <li class=""><a href="/statistics/monthlyPerformanceByNation.do" target="">월별국가별 실적</a></li>
+                          </ul>
+                        </li>
+                        <li class="">
+                          <a href="/statistics/periodPerformance.do" target="">기간별 수출입</a>
+                          <ul class="depth3" id="menu_dept3_66">
+                            <li class=""><a href="/statistics/periodPerformance.do" target="">기간별 실적</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- ChaTi 수정 지능형대화  -->
+                <li class="ChaTi"> <a href="./sub01.html" target="_self" id="ChaTi" role="button">지능형대화</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- 230803 수정 -->
+          <div class="utils">
+            <button class="btn_sch_hd">통합검색</button>
+            <div class="sch_pop">
+              <form action="https://www.kati.net/search.do" id="floatSearchForm" name="floatSearchForm" method="post" onsubmit="return floatSearchCheck()">
+                <div class="sch_box">
+                  <input type="hidden" name="searchOrder" value="DATE" />
+                  <input type="text" id="floatKeyword" name="keyword" placeholder="검색어를 입력하세요." autocomplete="off" />
+                  <button class="btn_sch">검색하기</button>
+                </div>
+              </form>
+              <button class="btn_sch_close">닫기</button>
+            </div>
+            <button class="btn_sitemap">전체메뉴</button>
+          </div>
+          <!-- //230803 수정 -->
+        </div>
+      </header>
+      <!--  //header -->
+
+      <!-- container -->
+      <div class="container" style="padding-bottom: 0">
+        <div class="page-hgroup">
+          <div class="wrap">
+            <h2 class="page-title" style="position: relative; left: -150px">지능형 대화</h2>
+            <span class="page-location" style="position: relative; left: 1190px; top: -25px">
+              <a href="https://www.kati.net/index.do"><img src="https://www.kati.net/images/www/icon/icon_home_11x11.png" alt="홈" /></a>
+              <a href="#">지능형 대화</a>
+            </span>
+          </div>
+        </div>
+        <!-- //상단 -->
+
+        <!-- contents ChaTi sub03 지능형대화 내용 시작 -->
+        <div id="contents" class="inner" tabindex="0" style="width: 100%">
+          <div id="chat_container">
+            <div class="chatbox active">
+              <div class="inner">
+                <!-- 채팅시작 -->
+                <div class="chat_content">
+                  <!-- 질문 메시지 -->
+                  <article class="chat_message question">
+                    <div class="msg_txt">인도네시아로 라면을 수출하려면 어떤 서류가 필요해?</div>
+                  </article>
+
+                  <!-- 답변 로딩완료 후 메시지 -->
+                  <article class="chat_message answer">
+                    <div class="msg_txt ico">답변</div>
+                    <span class="info_txt bling ico">Ai로 검색결과를 요약하여 생성된 답변입니다.</span>
+
+                    <!-- 답변 본문 -->
+                    <div class="answer_contents">
+                      <p>인도네시아로 라면을 수출하려면 다음과 같은 서류가 필요합니다.</p>
+
+                      <dl class="doc_list">
+                        <dt><strong>1. 서류 목록</strong></dt>
+                        <dd>수출신고서</dd>
+                        <dd>상업송장</dd>
+                        <dd>포장명세서</dd>
+                      </dl>
+
+                      <p>이러한 서류들은 관세청 UNI-PASS 시스템을 통해 전자적으로 세관에 제출해야 합니다. 수출신고가 완료되면 ‘수출신고필증’이 교부되며, 수출신고가 수리된 날로부터 30일 내에 운송 수단에 선적 완료해야합니다.</p>
+
+                      <div class="info_location">
+                        <p class="tit">관련사업부서 안내</p>
+                        <p class="call">12-345-5678</p>
+                        <ul>
+                          <li>수출식품본부</li>
+                          <li>해외사업처</li>
+                          <li>바이어사업부</li>
+                        </ul>
+                      </div>
+                      <!-- //info_laction -->
+
+                      <div class="response_controls">
+                        <div class="feedback_btn">
+                          <button class="btn copy ico" title="복사">복사하기</button>
+                          <button class="btn like ico" title="좋아요">좋아요</button>
+                          <button class="btn dislike ico" title="싫어요">싫어요</button>
+                        </div>
+                        <p class="ai disclaimer">본 응답은 AI 기반으로 생성된 내용이며, 실제 정보와 다를 수 있으니 반드시 공식 자료를 함께 확인해 주세요.</p>
+                      </div>
+                      <!-- //response_controls -->
+                      <div class="feedback_contents">
+                        <p>불만족한 이유는 무엇인가요?</p>
+                        <div class="box">
+                          <button type="button" class="btn">요약된 내용이 마음에 들지 않아요.</button>
+                          <button type="button" class="btn">질문과 상관없는 결과예요.</button>
+                          <button type="button" class="btn">답변의 내용이 안전하지 않거나 문제의 소지가 있어요.</button>
+                          <button type="button" class="btn more ico" id="openFeedbackModalBtn">더 자세한 내용 제출</button>
+                        </div>
+                      </div>
+                      <!-- //feedback_contents -->
+                    </div>
+                    <!-- //answer_contents 답변본문-->
+
+                    <!-- 출처 -->
+                    <div class="reference_section is_source">
+                      <button class="btn toggle_trigger" type="button" onclick="toggleOpen(this)">출처</button>
+                      <ul class="reference_list">
+                        <li>
+                          <span class="category">수출뉴스 > 해외시장동향</span>
+                          <span class="title">[202409-45] 인도네시아 라면수프 보고서.hwp</span>
+                          <a href="#" class="download_link btn ico" role="button">원문보기</a>
+                        </li>
+                        <li>
+                          <span class="category">수출뉴스 > 해외시장동향</span>
+                          <span class="title">[202409-45] 인도네시아 라면수프 보고서.hwp</span>
+                          <a href="#" class="download_link btn ico" role="button">원문보기</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //출처 -->
+
+                    <!-- 연관질의 -->
+                    <div class="reference_section is_related">
+                      <button class="btn toggle_trigger" type="button" onclick="toggleOpen(this)">연관질의</button>
+                      <ul class="reference_list">
+                        <li>
+                          <a href="#">인도네시아 전통 음식에 대해 알려주세요.</a>
+                        </li>
+                        <li>
+                          <a href="#">인도네시아에서 인기 있는 길거리 음식은 무엇인가요?</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //연관질의 -->
+                  </article>
+                </div>
+                <!-- //채팅끝 -->
+
+                <div class="input_section">
+                  <textarea class="prompt_input" name="prompt-textarea" placeholder="Kati에게 무엇이든 물어보세요"></textarea>
+                  <div class="btn_wrap">
+                    <button class="file btn ico">파일첨부</button>
+                    <button class="submit btn ico">보내기</button>
+                  </div>
+                </div>
+                <!-- //input_section -->
+                <p class="disclaimer">ChaTi는 KATI에 등록되어있는 수출정보를 기반으로 검색하여 신뢰도 높은 정보를 제공합니다.</p>
+              </div>
+              <!-- //inner -->
+            </div>
+            <!-- //chatbot -->
+          </div>
+          <!-- //chat_contatiner -->
+        </div>
+        <!-- //contents sub03 지능형대화 끝-->
+      </div>
+      <!-- //container -->
+    </div>
+    <!-- //wrap -->
+
+    <!-- modal 평점 -->
+    <div id="feedbackModal" class="modal" style="display: none">
+      <div class="modal_content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h3 class="modal_title">피드백 제출</h3>
+        <b>평점을 선택해주세요.</b>
+        <div class="star_rating" id="starRating">
+          <span data-value="1" class="star btn ico" role="button" aria-label="1점" tabindex="0">별</span>
+          <span data-value="2" class="star btn ico" role="button" aria-label="2점" tabindex="0">별</span>
+          <span data-value="3" class="star btn ico" role="button" aria-label="3점" tabindex="0">별</span>
+          <span data-value="4" class="star btn ico" role="button" aria-label="4점" tabindex="0">별</span>
+          <span data-value="5" class="star btn ico" role="button" aria-label="5점" tabindex="0">별</span>
+        </div>
+        <p>ChaTi가 더 유용한 서비스를 제공할 수 있도록 여러분의 소중한 피드백을 부탁드립니다.</p>
+        <textarea placeholder="자유롭게 내용을 작성해주세요." rows="5" style="width: 100%; margin-top: 1em"></textarea>
+        <div class="btn_wrap">
+          <button type="button" class="btn cancel" id="cancelModalBtn">취소</button>
+          <button type="button" class="btn submit" id="submitModalBtn">제출</button>
+        </div>
+      </div>
+      <div class="feedback_current">
+        <p>피드백 감사합니다!</p>
+      </div>
+    </div>
+    <!-- //modal 평점 -->
+
+    <!-- footer -->
+    <div id="footer">
+      <div class="inner">
+        <div class="footer-util">
+          <!-- <a href="javascript:window.open('http://www.at.or.kr/html/member/at_acount_1.html', '', 'width=863, height=700, left=0, scrollbars=yes');">이용약관</a> -->
+          <!-- <a href="javascript:window.open('http://www.at.or.kr/html/member/at_acount_2.html', '', 'width=863, height=700, left=0, scrollbars=yes');" title="새 창 열림"><strong>개인정보처리방침</strong></a>
+			<a href="javascript:window.open('http://www.at.or.kr/html/member/at_acount_5.html', '', 'width=863, height=700, left=0, scrollbars=yes');" title="새 창 열림">이메일무단수집거부</a> -->
+          <a href="http://www.at.or.kr/html/member/at_acount_5.html" onclick="javascript:window.open(this.href, '', 'width=1200, height=700, left=0, scrollbars=yes'); return false" target="_blank" title="새 창 열림">이메일무단수집거부</a>
+          <a href="http://www.at.or.kr/html/member/at_acount_3.html" onclick="javascript:window.open(this.href, '', 'width=1200, height=700, left=0, scrollbars=yes'); return false" target="_blank" title="새 창 열림">저작권보호정책</a>
+          <a href="http://www.at.or.kr/contents/apko316110/view.action" target="_blank" title="새 창 열림">찾아오시는 길</a>
+          <!-- <a href="/wpge/sitemap.do">사이트맵</a> -->
+        </div>
+        <!-- // footer-util -->
+
+        <div class="footer-info">
+          <ul>
+            <li>[58326] 전라남도 나주시 문화로 227 한국농수산식품유통공사 KATI 이용문의 061-931-0879 Email <a href="mailto:kati@at.or.kr">kati@at.or.kr</a></li>
+          </ul>
+
+          <p class="copy">COPYRIGHT©AT KATI. ALL RIGHT RESERVED</p>
+
+          <div class="family-site-area">
+            <div class="design-select">
+              <label for="design-select1">Family Site</label>
+
+              <form action="/">
+                <select id="design-select1" title="Family Site 선택">
+                  <!-- // onchange="window.open(this.value); return false;" -->
+                  <option value="">Family Site</option>
+                  <option value="https://www.at.or.kr/">aT통합홈페이지</option>
+                  <option value="https://www.kamis.or.kr/">KAMIS(농산물유통정보)</option>
+                  <option value="https://www.atfis.or.kr/home/index.do">FIS(식품산업통계정보)</option>
+                  <option value="https://www.atfis.or.kr/fip/front/index.do">한국외식산업정보포털(The 외식)</option>
+                  <option value="https://atess.at.or.kr/">수출지원시스템</option>
+                  <option value="https://global.at.or.kr/">aT 수출종합지원시스템</option>
+                  <option value="https://www.foodbiz.or.kr/">식품기업지원관리시스템</option>
+                  <option value="https://www.k-foodtrade.or.kr/index.do">K-FOOD</option>
+                  <option value="https://www.eat.co.kr/">aT농식품거래소</option>
+                  <option value="https://www.baroinfo.com/">바로정보</option>
+                  <option value="https://www.atbid.co.kr/">비축농산물 전자입찰시스템</option>
+                  <!-- <option value="https://www.agromarket.kr">정가수의매매 예약정보제공 시스템</option> -->
+                  <option value="https://atcenter.at.or.kr/">aTCenter</option>
+                  <option value="https://edu.at.or.kr/">aT농식품유통교육원</option>
+                  <option value="https://flower.at.or.kr/yfmc/">aT화훼공판장</option>
+                  <option value="https://kafb2b.or.kr">농산물 온라인도매시장</option>
+
+                  <!-- <option value="https://bms.at.or.kr/index.do">BMS</option> -->
+                </select>
+                <button type="button" title="새 창 열림" class="btn-mvs" id="family_site_btn_1">이동</button>
+              </form>
+            </div>
+            <!-- // design-select -->
+
+            <div class="design-select">
+              <label for="design-select2">유관기관</label>
+
+              <form action="/">
+                <select id="design-select2" title="유관기관 선택">
+                  <option value="">유관기관</option>
+                  <option value="https://www.mafra.go.kr/">농림축산식품부</option>
+                  <option value="https://www.naqs.go.kr/">국립농산물품질관리원</option>
+                  <option value="https://www.naas.go.kr/">농촌진흥청 국립농업과학원</option>
+                  <option value="https://www.qia.go.kr/">농림축산검역본부</option>
+                  <option value="https://www.seed.go.kr/">국립종자원</option>
+                  <option value="https://www.kma.go.kr/">기상청</option>
+                  <option value="https://www.ipet.re.kr/">농림수산식품기술기획평가원</option>
+                  <option value="https://www.epis.or.kr/">농림수산식품교육문화정보원</option>
+                  <option value="https://www.ati.go.kr/">농식품공무원교육원</option>
+                  <option value="https://www.rda.go.kr/">농촌진흥청</option>
+                  <option value="https://www.nonghyup.com/">농협</option>
+                  <option value="https://www.forest.go.kr">산림청</option>
+                  <option value="https://www.suhyup.co.kr/">수협</option>
+                  <option value="https://www.ekr.or.kr">한국농어촌공사</option>
+                  <option value="https://www.af.ac.kr/">한국농수산대학</option>
+                  <option value="https://www.krei.re.kr/">한국농촌경제연구원</option>
+                  <option value="https://www.kfri.re.kr/">한국식품연구원</option>
+                  <option value="https://www.sonosa.or.kr/">남북교류협력지원협회</option>
+                  <!-- 						<option value="http://www.agrihrd.or.kr/">농업인재개발원</option> -->
+                  <!-- 						<option value="http://market.affis.net/">도매시장통합홈페이지</option> -->
+                  <!-- 						<option value="http://www.hansik.org">한식재단</option> -->
+                  <!-- 						<option value="http://www.smba.go.kr">중소기업청</option> -->
+                  <!-- 						<option value="http://www.mfds.go.kr">식품의약품안전처</option> -->
+                  <!-- 						<option value="http://www.kotra.or.kr">코트라</option> -->
+                  <!-- 						<option value="http://kosis.kr">통계청 국가통계포털</option> -->
+                  <!-- 						<option value="http://www.sbc.or.kr">중소기업진흥공단</option> -->
+                  <!-- 						<option value="http://www.semas.or.kr">소상공인시장진흥공단</option> -->
+                  <!-- 						<option value="http://www.foodservice.or.kr">한국외식업중앙회</option> -->
+                  <!-- 						<option value="http://www.kofsia.or.kr">한국외식산업협회</option> -->
+                  <!-- 						<option value="http://www.ikfa.or.kr">한국프랜차이즈산업협회</option> -->
+                  <!-- 						<option value="http://foodservicepolicy.com">한국외식산업정책학회</option> -->
+                  <!-- 						<option value="http://www.fmsok.or.kr">한국외식경영학회</option> -->
+                  <option value="http://www.tradenavi.or.kr/">TradeNAVI(통합무역정보서비스)</option>
+                </select>
+
+                <button type="button" title="새 창 열림" class="btn-mvs" id="family_site_btn_2">이동</button>
+              </form>
+            </div>
+            <!-- // design-select -->
+          </div>
+          <!-- // family-site-area -->
+        </div>
+        <!-- // footer-info -->
+      </div>
+      <!-- // inner -->
+    </div>
+  </body>
+</html>

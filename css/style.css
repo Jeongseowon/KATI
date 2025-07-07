@@ -1,0 +1,6 @@
+/* gnb 수정 */
+#gnb .depth1>li + li{margin-left: 20px;}
+/* 지능형 대화 버튼 추가 */
+#gnb .depth1>li.chaTi>a{padding: 8px;margin: 40px 0 35px;font-size: 16px;color: #fff;position: relative;background: var(--primary);border-radius: 30px;}
+#gnb .depth1>li.chaTi>a::before{content:"\F569";font-family:var(--ifont); color: #FFC300;transform: scaleX(-1);display: inline-block;margin-right: 5px;}
+
