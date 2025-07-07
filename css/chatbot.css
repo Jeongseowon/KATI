@@ -107,11 +107,11 @@
 .chat_content .chat_message.question{align-self: flex-end;}
 .chat_content .chat_message.answer{align-self: flex-start;position:relative}
 .chat_content .chat_message.answer .msg_txt{background: var(--bg2);border: 1px solid var(--bd);}
-.chat_content .chat_message.answer .msg_txt.ico::before{content:"";background: url(../../images/www/chati/ico_klogo.png)0 0 no-repeat;width:12px;height:15px;margin-right: 5px;display: inline-block;vertical-align: middle;}
+.chat_content .chat_message.answer .msg_txt.ico::before{content:"";background: url(../images/chati/ico_klogo.png)0 0 no-repeat;width:12px;height:15px;margin-right: 5px;display: inline-block;vertical-align: middle;}
 .chat_content .chat_message .info_txt{color: var(--sub-color);position: absolute;top:10px;right:-100px;white-space: nowrap;width: 100%;}
 .chat_content .chat_message .info_txt.ico::before{content: "";width:16px;height: 16px;margin-right: 10px;display: inline-block;vertical-align: middle;}
-.chat_content .chat_message .loading.ico::before{background: url(../../images/www/chati/ico_loading.png)0 0 no-repeat;animation: spin 2s linear infinite;}
-.chat_content .chat_message .bling.ico::before{background: url(../../images/www/chati/ico_bling.png) 0 0 no-repeat;}
+.chat_content .chat_message .loading.ico::before{background: url(../images/chati/chati/ico_loading.png)0 0 no-repeat;animation: spin 2s linear infinite;}
+.chat_content .chat_message .bling.ico::before{background: url(../images/chati/chati/ico_bling.png) 0 0 no-repeat;}
 
 /* 회전 애니메이션 */
 @keyframes spin {
@@ -126,14 +126,14 @@
 .chat_content .answer_contents .info_location{background: var(--bg2);padding:8px 16px;display: inline-flex;align-items: center;gap: 24px;border-radius: 10px;}
 .chat_content .answer_contents .info_location p{color: var(--primary);font-weight: 600; position: relative;}
 .chat_content .answer_contents .info_location .tit{display: flex;align-items: center;}
-.chat_content .answer_contents .info_location .tit::before{content:"";background: url(../../images/www/chati/ico_infolocation.png)0 0 no-repeat;width:16px;height:16px;margin-right:10px;}
+.chat_content .answer_contents .info_location .tit::before{content:"";background: url(../images/chati/chati/ico_infolocation.png)0 0 no-repeat;width:16px;height:16px;margin-right:10px;}
 .chat_content .answer_contents .info_location > ul {display: flex;align-items: center;}
 .chat_content .answer_contents .info_location > ul li:not(:last-child){position: relative;display: flex;align-items: center;gap: 8px;}
 .chat_content .answer_contents .info_location > ul li:not(:last-child)::after{content:"\EA6E";color: var(--main-color);font-family: var(--ifont);margin-right:8px;font-size:18px;}
 
 .chat_content .response_controls{display: flex;justify-content: space-between;align-items: center;}
 .chat_content .disclaimer.ai{font-size: 14px;color: var(--sub-color);display: flex;align-items: center;}
-.chat_content .disclaimer.ai::before{content:"";background:url(../../images/www/chati/ico_feedback.png)0 0 no-repeat;width:14px;height:14px;background-size: 100%;margin-right: 5px;}
+.chat_content .disclaimer.ai::before{content:"";background:url(../images/chati/chati/ico_feedback.png)0 0 no-repeat;width:14px;height:14px;background-size: 100%;margin-right: 5px;}
 
 /* feedback ico */
 .feedback_btn {display: flex;}
@@ -175,8 +175,8 @@
 .modal .modal_content > b{font-size: 21px;color: var(--main-color);font-weight: 600;}
 .modal .modal_content > p{font-size: var(--main-color);font-size: 16px;padding:20px 0;}
 .modal .star_rating{display: flex;align-items: center;justify-content: center;gap: 6px;margin-top: 16px;}
-.modal .star_rating .star{font-size: 0;width: 32px;height: 32px;background: url(../../images/www/chati/ico_star_empty.png)0 0 no-repeat;}
-.modal .star_rating .star.filled{background-image: url(../../images/www/chati/ico_star.png);}
+.modal .star_rating .star{font-size: 0;width: 32px;height: 32px;background: url(../images/chati/ico_star_empty.png)0 0 no-repeat;}
+.modal .star_rating .star.filled{background-image: url(../images/chati/ico_star.png);}
 .modal textarea{height:140px;border: 1px solid var(--secondary);background: rgba(var(--white));padding:16px;box-sizing: border-box;border-radius: 8px;color: var(--gray60);resize: none;}
 .modal textarea:focus{border: 1px solid var(--primary);outline: none;}
 .modal .btn_wrap {display: flex;align-items: center;justify-content: flex-end;margin-top:20px;gap: 8px;}
