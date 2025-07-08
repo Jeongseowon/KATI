@@ -159,7 +159,7 @@
 .feedback_contents > p{font-weight: 600;font-size: 16px;margin-bottom: 20px;;}
 .feedback_contents .box{display: flex;align-items: center;flex-wrap: wrap;gap: 10px;}
 .feedback_contents .btn{background:var(--bg3);font-size: 14px;padding: 5px;border-radius: 7px;border: 0;}
-.feedback_contents .btn.more{background: var(--primary);color: rgba(var(--white));display: flex;align-items: center;}
+.feedback_contents .btn.more{width:auto;height:auto;background: var(--primary);color: rgba(var(--white));display: flex;align-items: center;}
 .feedback_contents .btn.more::after{content: "\EF78";font-family: var(--ifont);margin: 0 5px;}
 
 /* 출처 및 연관질의 */
@@ -171,7 +171,7 @@
 .reference_section .reference_list li{display: flex;align-items: center;background:var(--bg2);padding:16px;border-radius: 10px;gap: 24px}
 .reference_section .reference_list li:not(:last-child){margin-bottom: 10px;}
 .reference_section .reference_list .category{font-weight: 600;}
-.reference_section .reference_list .download_link{margin-left: auto;font-weight: 600;display: flex!important;;align-items: center!important;font-size: 14px!important;}
+.reference_section .reference_list .download_link{width:auto;height:auto;margin-left: auto;font-weight: 600;display: flex!important;;align-items: center!important;font-size: 14px!important;}
 .reference_section .reference_list .download_link::before{content: "\EEB2";font-family: var(--ifont);margin-right: 10px;}
 
 /* 모달 */
