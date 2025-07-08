@@ -77,12 +77,14 @@
 .chatbox h1.title .logo::after{content:"\F569";font-family:var(--ifont); color: #FFC300;transform: scaleX(-1);background: none;-webkit-background-clip: initial;-webkit-text-fill-color: initial;display:inline-block;position:absolute;top:-20px;right:-20px;font-size: 20px;}
 .chatbox .sub_tit{font-size:19px;color: #777;}
 
-/* 초기상태에서는 중앙 채팅 입력시 input_section에 active클래스 추가  */
+.disclaimer{color: var(--sub-color);font-size:14px;}
+
 .chatbox .input_section{width:100%;}
 .chatbox .input_section.active{position: absolute;bottom:0;left:0;}
 .chatbox .input_section .input_box{padding:32px;margin:48px 0 16px 0;background: rgba(var(--white));box-shadow: 0px 0px 10px 0px rgba(112, 131, 156, 0.20); border-radius: 30px;box-sizing: border-box;}
 .chatbox .prompt_input{border: 0;padding:0;width:100%;resize: none;margin-bottom:10px;font-family: var(--font1);font-size: 17px;color: #777;}
 .chatbox .prompt_input:focus{outline: none;box-shadow: none;}
+.chatbox .input_section .disclaimer{text-align: center;}
 
 .chatbox .input_section .btn_wrap{display: flex;justify-content: space-between;align-items: center;}
 .chatbox .input_section .btn.ico {width:38px;height:38px;font-size:0;border-radius: 50%;border: none;background: var(--bg2);}
@@ -90,7 +92,7 @@
 .chatbox .input_section .btn.submit{background: var(--point);}
 .chatbox .input_section .btn.submit::before{content:"\F5E0"; color: rgba(var(--white)); font-size: 20px;}
 
-.disclaimer{color: var(--sub-color);font-size:14px;}
+
 
 /* chati content */
 /* .chatbox.active > .inner{min-height: 60vh;} */
