@@ -385,14 +385,19 @@
                 <h3 class="sub_tit">지금 ChaTi와 대화를 시작하세요!</h3>
 
                 <div class="input_section">
-                  <textarea class="prompt_input" name="prompt-textarea" placeholder="Kati에게 무엇이든 물어보세요"></textarea>
-                  <div class="btn_wrap">
-                    <button class="file btn ico">파일첨부</button>
-                    <button class="submit btn ico" onclick="location.href='./sub02.html'">보내기</button>
+                  <div class="input_box">
+                    <textarea class="prompt_input" name="prompt-textarea" placeholder="Kati에게 무엇이든 물어보세요"></textarea>
+                    <div class="btn_wrap">
+                      <!-- <button class="file btn ico">파일첨부</button> -->
+                      <input type="file" class="file btn ico">
+                      <button class="submit btn ico" onclick="location.href='./sub02.html'">보내기</button>
+                    </div>
                   </div>
+                  <!-- //input_box -->
+                  <p class="disclaimer">ChaTi는 KATI에 등록되어있는 수출정보를 기반으로 검색하여 신뢰도 높은 정보를 제공합니다.</p>
                 </div>
                 <!-- //input_section -->
-                <p class="disclaimer">ChaTi는 KATI에 등록되어있는 수출정보를 기반으로 검색하여 신뢰도 높은 정보를 제공합니다.</p>
+               
               </div>
               <!-- //inner -->
             </div>
