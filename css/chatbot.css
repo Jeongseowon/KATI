@@ -77,8 +77,9 @@
 .chatbox .sub_tit{font-size:19px;color: #777;}
 
 /* 초기상태에서는 중앙 채팅 입력시 input_section에 active클래스 추가  */
-.chatbox .input_section{width:100%;padding:32px;margin:48px 0 16px 0;background: rgba(var(--white));box-shadow:  0px 0px 10px 0px rgba(112, 131, 156, 0.20); border-radius: 30px;box-sizing: border-box;}
+.chatbox .input_section{width:100%;}
 .chatbox .input_section.active{position: absolute;bottom:0;left:0;}
+.chatbox .input_section .input_box{padding:32px;margin:48px 0 16px 0;background: rgba(var(--white));box-shadow: 0px 0px 10px 0px rgba(112, 131, 156, 0.20); border-radius: 30px;box-sizing: border-box;}
 .chatbox .prompt_input{border: 0;padding:0;width:100%;resize: none;margin-bottom:10px;font-family: var(--font1);font-size: 17px;color: #777;}
 .chatbox .prompt_input:focus{outline: none;box-shadow: none;}
 
