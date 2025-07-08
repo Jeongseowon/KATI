@@ -130,6 +130,7 @@
 .chat_content .answer_contents > *:not(:last-child) {margin-bottom:16px;}
 .chat_content .answer_contents .doc_list dd{font-weight: 600;}
 .chat_content .answer_contents .info_location{background: var(--bg2);padding:8px 16px;display: inline-flex;align-items: center;gap: 24px;border-radius: 10px;}
+.chat_content .answer_contents .info_location .tit_wrap{display: flex;align-items: center;gap: 24px;}
 .chat_content .answer_contents .info_location p{color: var(--primary);font-weight: 600; position: relative;}
 .chat_content .answer_contents .info_location .tit{display: flex;align-items: center;}
 .chat_content .answer_contents .info_location .tit::before{content:"";background: url(../images/chati/ico_infolocation.png)0 0 no-repeat;width:16px;height:16px;margin-right:10px;}
@@ -158,7 +159,7 @@
 .feedback_contents.active{display: block;}
 .feedback_contents > p{font-weight: 600;font-size: 16px;margin-bottom: 20px;;}
 .feedback_contents .box{display: flex;align-items: center;flex-wrap: wrap;gap: 10px;}
-.feedback_contents .btn{background:var(--bg3);font-size: 14px;padding: 5px;border-radius: 7px;border: 0;}
+.feedback_contents .btn{background:var(--bg3);font-size: 14px;padding: 5px 8px;border-radius: 7px;border: 0;}
 .feedback_contents .btn.more{width:auto;height:auto;background: var(--primary);color: rgba(var(--white));display: flex;align-items: center;}
 .feedback_contents .btn.more::after{content: "\EF78";font-family: var(--ifont);margin: 0 5px;}
 

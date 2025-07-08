@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="google-site-verification" content="Bg7UHgdh7d3H8Ynf0sDOjLh_6crPbn5OYSQZM2yDEvc" />
+    <meta name="description" content="aT한국농수산식품유통공사에서 운영하는 농식품 수출정보 홈페이지 수출입통계, 국가정보, 품목정보, 해외 식품첨가물 규정, 비관세장벽, 통관거부사례, 소비트렌드 등 제공" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+    <title>KATI 농식품수출정보</title>
+
+    <link href="https://m.kati.net/images/m/common/favicon.ico" rel="shortcut icon" />
+    <!-- //ChaTi 지능형 대화 css -->
+    <link href="../css/import.css" rel="stylesheet" />
+    <link href="./css/chatbot.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/common.css?v=1.0" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/sub.css?v=1.0" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/swiper.min.css?v=1.0" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/slick.css" />
+    <!-- 221114 추가 -->
+    <link rel="stylesheet" href="https://m.kati.net/css/m/popup.css?v=1.0" />
+    <!-- // 171207 추가 -->
+    <link rel="stylesheet" href="https://m.kati.net/css/m/main.css?v=1.2" />
+    <!-- // 171207 추가 -->
+    <script src="https://m.kati.net/js/m/jquery-3.6.0.js?v=1.0"></script>
+    <script src="https://m.kati.net/js/m/swiper.min.js?v=1.0"></script>
+    <script src="https://m.kati.net/js/m/selectize.js?v=1.0"></script>
+    <!-- // 171207 추가 -->
+    <script src="https://m.kati.net/js/www/html2canvas.js?v=1.0"></script>
+    <!-- // 171219 추가 -->
+    <script src="https://m.kati.net/js/www/jspdf.min.js?v=1.0"></script>
+    <!-- // 171219 추가 -->
+    <script src="https://m.kati.net/js/m/slick.js?v=1.0"></script>
+    <!-- 221114 추가 -->
+    <script src="https://m.kati.net/js/m/ui.js?v=1.0"></script>
+    <script src="https://m.kati.net/js/m/main.js?v=1.0"></script>
+    <!-- // 171207 추가 -->
+    <script src="https://m.kati.net/js/m/function.js?v=1.3"></script>
+    <!-- Google tag (gtag.js) GA4 09 KATI 2022.12. UA connected -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9HCW5V7CXF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9HCW5V7CXF");
+      gtag("config", "G-1C6GSRP5Z8", { content_group: "KATI" });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 상단 -->
+      <div id="accessibility">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+      </div>
+      <!-- header -->
+      <header id="header">
+        <h1>
+          <a href="/index.do"><span class="blind">농수산식품수출지원정보</span></a>
+        </h1>
+        <!-- <a href="/msearch.do" role="button" class="btn-srh"><span class="blind">검색</span></a> -->
+        <a href="#" role="button" class="btn-srh btn_top_sch"><span class="blind">검색</span></a
+        ><!-- 230608 btn_top_sch 클래스 추가-->
+        <div class="sch_box">
+          <b class="tit">검색</b>
+          <button class="btn_sch_close">취소</button>
+          <div class="input_wrap">
+            <form action="/msearch.do" id="layerSearchForm" name="layerSearchForm" method="post" onsubmit="return searchCheck2()">
+              <input type="hidden" name="searchOrder" value="DATE" />
+              <input type="hidden" name="reKeyword" id="reLayerKeyword" />
+              <input type="text" id="layerKeyword" name="keyword" placeholder="검색어를 입력하세요." />
+              <button class="btn_sch">검색</button>
+            </form>
+          </div>
+        </div>
+        <div class="dimd"></div>
+        <script>
+          $(".btn_top_sch").click(function () {
+            $("#layerKeyword").focus();
+            $(".sch_box").addClass("on");
+            $(".dimd").show();
+            return false;
+          });
+          $(".btn_sch_close").click(function () {
+            $(".sch_box").removeClass("on");
+            $(".dimd").hide();
+            return false;
+          });
+          function searchCheck2() {
+            var keyword = $("#layerKeyword").val();
+            if (keyword != "") {
+              keyword = keyword.replace(/\&/g, "&amp;");
+              keyword = keyword.replace(/\</g, "&lt;");
+              keyword = keyword.replace(/\>/g, "&gt;");
+              keyword = keyword.replace(/\\/g, "&quot;");
+              keyword = keyword.replace(/\'/g, "&#146;");
+            }
+            if (keyword == "") {
+              alert("검색어를 입력해주세요.");
+              return false;
+            } else {
+              $("#reLayerKeyword").val(keyword);
+              return true;
+            }
+          }
+        </script>
+        <a href="#n" role="button" class="btn-menu"><span class="blind">전체메뉴</span></a>
+      </header>
+      <!--  //header -->
+
+      <!-- container cahrti 지능형대화 타이틀 수정 -->
+      <div class="container" style="padding-bottom: 0;margin-top: 5rem !important;">
+        <div class="page-hgroup">
+          <div class="wrap">
+            <h2 class="page-title" style="position: relative; left: -150px">지능형 대화</h2>
+            <span class="page-location" style="position: relative; left: 1190px; top: -25px">
+              <a href="https://www.kati.net/index.do"><img src="https://www.kati.net/images/www/icon/icon_home_11x11.png" alt="홈" /></a>
+              <a href="#">지능형 대화</a>
+            </span>
+          </div>
+        </div>
+        <!-- //상단 -->
+
+        <!-- contents ChaTi sub01 지능형대화 메인 시작 -->
+        <div id="contents" class="inner" tabindex="0" style="width: 100%">
+          <div id="chat_container">
+            <div class="chatbox">
+              <div class="inner">
+                <h1 class="title">Welcome to <span class="logo">ChaTi</span></h1>
+                <h3 class="sub_tit">지금 ChaTi와 대화를 시작하세요!</h3>
+
+                <div class="input_section">
+                  <div class="input_box">
+                    <textarea class="prompt_input" name="prompt-textarea" placeholder="Kati에게 무엇이든 물어보세요"></textarea>
+                    <div class="btn_wrap">
+                      <div class="file_upload btn ico">
+                        <input type="file" class="file_input" />
+                        <label for="upload" class="file_label">파일 선택</label>
+                      </div>
+                      <button class="submit btn ico" onclick="location.href='./sub02.html'">보내기</button>
+                    </div>
+                  </div>
+                  <!-- //input_box -->
+                  <p class="disclaimer">ChaTi는 KATI에 등록되어있는 수출정보를 기반으로 검색하여 신뢰도 높은 정보를 제공합니다.</p>
+                </div>
+                <!-- //input_section -->
+              </div>
+              <!-- //inner -->
+            </div>
+          </div>
+          <!-- //chat_contatiner -->
+        </div>
+        <!-- //contents sub01 지능형대화 끝-->
+      </div>
+      <!-- //container -->
+    </div>
+    <!-- //wrap -->
+    <!-- //footer -->
+    <footer id="footer">
+      <small>© aT KATI. All Rights Reserved.</small>
+      <ul class="pc-top-btn">
+        <!-- <li><a href="http://www.kati.net/index.do" target="_blank">PC버전</a></li> -->
+        <li><a href="#" role="button">맨위로</a></li>
+      </ul>
+    </footer>
+    <!-- //footer -->
+  </body>
+</html>

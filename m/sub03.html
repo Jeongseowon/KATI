@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="google-site-verification" content="Bg7UHgdh7d3H8Ynf0sDOjLh_6crPbn5OYSQZM2yDEvc" />
+    <meta name="description" content="aT한국농수산식품유통공사에서 운영하는 농식품 수출정보 홈페이지 수출입통계, 국가정보, 품목정보, 해외 식품첨가물 규정, 비관세장벽, 통관거부사례, 소비트렌드 등 제공" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+    <title>KATI 농식품수출정보</title>
+
+    <link href="https://m.kati.net/images/m/common/favicon.ico" rel="shortcut icon" />
+    <!-- //ChaTi 지능형 대화 css -->
+    <link href="../css/import.css" rel="stylesheet" />
+    <link href="./css/chatbot.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/common.css?v=1.0" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/sub.css?v=1.0" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/swiper.min.css?v=1.0" />
+    <link rel="stylesheet" href="https://m.kati.net/css/m/slick.css" />
+    <!-- 221114 추가 -->
+    <link rel="stylesheet" href="https://m.kati.net/css/m/popup.css?v=1.0" />
+    <!-- // 171207 추가 -->
+    <link rel="stylesheet" href="https://m.kati.net/css/m/main.css?v=1.2" />
+    <!-- // 171207 추가 -->
+    <script src="https://m.kati.net/js/m/jquery-3.6.0.js?v=1.0"></script>
+    <script src="https://m.kati.net/js/m/swiper.min.js?v=1.0"></script>
+    <script src="https://m.kati.net/js/m/selectize.js?v=1.0"></script>
+    <!-- // 171207 추가 -->
+    <script src="https://m.kati.net/js/www/html2canvas.js?v=1.0"></script>
+    <!-- // 171219 추가 -->
+    <script src="https://m.kati.net/js/www/jspdf.min.js?v=1.0"></script>
+    <!-- // 171219 추가 -->
+    <script src="https://m.kati.net/js/m/slick.js?v=1.0"></script>
+    <!-- 221114 추가 -->
+    <script src="https://m.kati.net/js/m/ui.js?v=1.0"></script>
+    <script src="https://m.kati.net/js/m/main.js?v=1.0"></script>
+    <!-- // 171207 추가 -->
+    <script src="https://m.kati.net/js/m/function.js?v=1.3"></script>
+    <!-- //ChaTi 지능형 대화 js 추가 -->
+    <script src="../js/sub/chatbot.js"></script>
+    <!-- Google tag (gtag.js) GA4 09 KATI 2022.12. UA connected -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9HCW5V7CXF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9HCW5V7CXF");
+      gtag("config", "G-1C6GSRP5Z8", { content_group: "KATI" });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 상단 -->
+      <div id="accessibility">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+      </div>
+      <!-- header -->
+      <header id="header">
+        <h1>
+          <a href="/index.do"><span class="blind">농수산식품수출지원정보</span></a>
+        </h1>
+        <!-- <a href="/msearch.do" role="button" class="btn-srh"><span class="blind">검색</span></a> -->
+        <a href="#" role="button" class="btn-srh btn_top_sch"><span class="blind">검색</span></a
+        ><!-- 230608 btn_top_sch 클래스 추가-->
+        <div class="sch_box">
+          <b class="tit">검색</b>
+          <button class="btn_sch_close">취소</button>
+          <div class="input_wrap">
+            <form action="/msearch.do" id="layerSearchForm" name="layerSearchForm" method="post" onsubmit="return searchCheck2()">
+              <input type="hidden" name="searchOrder" value="DATE" />
+              <input type="hidden" name="reKeyword" id="reLayerKeyword" />
+              <input type="text" id="layerKeyword" name="keyword" placeholder="검색어를 입력하세요." />
+              <button class="btn_sch">검색</button>
+            </form>
+          </div>
+        </div>
+        <div class="dimd"></div>
+        <script>
+          $(".btn_top_sch").click(function () {
+            $("#layerKeyword").focus();
+            $(".sch_box").addClass("on");
+            $(".dimd").show();
+            return false;
+          });
+          $(".btn_sch_close").click(function () {
+            $(".sch_box").removeClass("on");
+            $(".dimd").hide();
+            return false;
+          });
+          function searchCheck2() {
+            var keyword = $("#layerKeyword").val();
+            if (keyword != "") {
+              keyword = keyword.replace(/\&/g, "&amp;");
+              keyword = keyword.replace(/\</g, "&lt;");
+              keyword = keyword.replace(/\>/g, "&gt;");
+              keyword = keyword.replace(/\\/g, "&quot;");
+              keyword = keyword.replace(/\'/g, "&#146;");
+            }
+            if (keyword == "") {
+              alert("검색어를 입력해주세요.");
+              return false;
+            } else {
+              $("#reLayerKeyword").val(keyword);
+              return true;
+            }
+          }
+        </script>
+        <a href="#n" role="button" class="btn-menu"><span class="blind">전체메뉴</span></a>
+      </header>
+      <!--  //header -->
+
+      <!-- container -->
+      <div class="container" style="padding-bottom: 0; margin-top:5rem !important">
+        <div class="page-hgroup">
+          <div class="wrap">
+            <h2 class="page-title">지능형 대화</h2>
+          </div>
+        </div>
+        <!-- contents ChaTi sub03 지능형대화 내용 시작 -->
+        <div id="contents" class="inner" tabindex="0" style="width: 100%">
+          <div id="chat_container">
+            <div class="chatbox active">
+              <div class="inner">
+                <!-- 채팅시작 -->
+                <div class="chat_content" id="chatScroll">
+                  <!-- 질문 메시지 -->
+                  <article class="chat_message question">
+                    <div class="msg_txt">인도네시아로 라면을 수출하려면 어떤 서류가 필요해?</div>
+                  </article>
+
+                  <!-- 답변 로딩완료 후 메시지 -->
+                  <article class="chat_message answer">
+                    <div class="msg_txt ico">답변</div>
+                    <span class="info_txt bling ico">Ai로 검색결과를 요약하여 생성된 답변입니다.</span>
+
+                    <!-- 답변 본문 -->
+                    <div class="answer_contents">
+                      <p>인도네시아로 라면을 수출하려면 다음과 같은 서류가 필요합니다.</p>
+
+                      <dl class="doc_list">
+                        <dt><strong>1. 서류 목록</strong></dt>
+                        <dd>수출신고서</dd>
+                        <dd>상업송장</dd>
+                        <dd>포장명세서</dd>
+                      </dl>
+
+                      <p>이러한 서류들은 관세청 UNI-PASS 시스템을 통해 전자적으로 세관에 제출해야 합니다. 수출신고가 완료되면 ‘수출신고필증’이 교부되며, 수출신고가 수리된 날로부터 30일 내에 운송 수단에 선적 완료해야합니다.</p>
+
+                      <div class="info_location">
+                        <div class="tit_wrap">
+                          <p class="tit">관련사업부서 안내</p>
+                          <p class="call">12-345-5678</p>
+                        </div>
+                        <ul>
+                          <li>수출식품본부</li>
+                          <li>해외사업처</li>
+                          <li>바이어사업부</li>
+                        </ul>
+                      </div>
+                      <!-- //info_laction -->
+
+                      <div class="response_controls">
+                        <div class="feedback_btn">
+                          <button class="btn copy ico" title="복사">복사하기</button>
+                          <button class="btn like ico" title="좋아요">좋아요</button>
+                          <button class="btn dislike ico" title="싫어요">싫어요</button>
+                        </div>
+                        <p class="ai disclaimer">본 응답은 AI 기반으로 생성된 내용이며, 실제 정보와 다를 수 있으니 반드시 공식 자료를 함께 확인해 주세요.</p>
+                      </div>
+                      <!-- //response_controls -->
+                      <div class="feedback_contents">
+                        <p>불만족한 이유는 무엇인가요?</p>
+                        <div class="box">
+                          <button type="button" class="btn">요약된 내용이 마음에 들지 않아요.</button>
+                          <button type="button" class="btn">질문과 상관없는 결과예요.</button>
+                          <button type="button" class="btn">답변의 내용이 안전하지 않거나 문제의 소지가 있어요.</button>
+                          <button type="button" class="btn more ico" id="openFeedbackModalBtn">더 자세한 내용 제출</button>
+                        </div>
+                      </div>
+                      <!-- //feedback_contents -->
+                    </div>
+                    <!-- //answer_contents 답변본문-->
+
+                    <!-- 출처 -->
+                    <div class="reference_section is_source">
+                      <button class="btn toggle_trigger" type="button" onclick="toggleOpen(this)">출처</button>
+                      <ul class="reference_list">
+                        <li>
+                          <span class="category">수출뉴스 > 해외시장동향</span>
+                          <span class="title">[202409-45] 인도네시아 라면수프 보고서.hwp</span>
+                          <a href="#" class="download_link btn ico" role="button">원문보기</a>
+                        </li>
+                        <li>
+                          <span class="category">수출뉴스 > 해외시장동향</span>
+                          <span class="title">[202409-45] 인도네시아 라면수프 보고서.hwp</span>
+                          <a href="#" class="download_link btn ico" role="button">원문보기</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //출처 -->
+
+                    <!-- 연관질의 -->
+                    <div class="reference_section is_related">
+                      <button class="btn toggle_trigger" type="button" onclick="toggleOpen(this)">연관질의</button>
+                      <ul class="reference_list">
+                        <li>
+                          <a href="#">인도네시아 전통 음식에 대해 알려주세요.</a>
+                        </li>
+                        <li>
+                          <a href="#">인도네시아에서 인기 있는 길거리 음식은 무엇인가요?</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //연관질의 -->
+                  </article>
+                  <!-- scroll  -->
+                  <button class="chat_scroll btn ico" id="scrollBtn" type="button">스크롤</button>
+                </div>
+                <!-- //채팅끝 -->
+
+                <div class="input_section active">
+                  <div class="input_box">
+                    <textarea class="prompt_input" name="prompt-textarea" placeholder="Kati에게 무엇이든 물어보세요"></textarea>
+                    <div class="btn_wrap">
+                      <div class="file_upload btn ico">
+                        <input type="file" class="file_input" />
+                        <label for="upload" class="file_label">파일 선택</label>
+                      </div>
+                      <button class="submit btn ico" onclick="location.href='./sub02.html'">보내기</button>
+                    </div>
+                  </div>
+                  <!-- //input_box -->
+                  <p class="disclaimer">ChaTi는 KATI에 등록되어있는 수출정보를 기반으로 검색하여 신뢰도 높은 정보를 제공합니다.</p>
+                </div>
+                <!-- //input_section -->
+              </div>
+              <!-- //inner -->
+            </div>
+            <!-- //chatbot -->
+          </div>
+          <!-- //chat_contatiner -->
+        </div>
+        <!-- //contents sub03 지능형대화 끝-->
+      </div>
+      <!-- //container -->
+    </div>
+    <!-- //wrap -->
+
+    <!-- modal 평점 -->
+    <div id="feedbackModal" class="modal" style="display: none">
+      <div class="modal_content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h3 class="modal_title">피드백 제출</h3>
+        <b>평점을 선택해주세요.</b>
+        <div class="star_rating" id="starRating">
+          <span data-value="1" class="star btn ico" role="button" aria-label="1점" tabindex="0">별</span>
+          <span data-value="2" class="star btn ico" role="button" aria-label="2점" tabindex="0">별</span>
+          <span data-value="3" class="star btn ico" role="button" aria-label="3점" tabindex="0">별</span>
+          <span data-value="4" class="star btn ico" role="button" aria-label="4점" tabindex="0">별</span>
+          <span data-value="5" class="star btn ico" role="button" aria-label="5점" tabindex="0">별</span>
+        </div>
+        <p>ChaTi가 더 유용한 서비스를 제공할 수 있도록 여러분의 소중한 피드백을 부탁드립니다.</p>
+        <textarea placeholder="자유롭게 내용을 작성해주세요." rows="5" style="width: 100%; margin-top: 1em"></textarea>
+        <div class="btn_wrap">
+          <button type="button" class="btn cancel" id="cancelModalBtn">취소</button>
+          <button type="button" class="btn submit" id="submitModalBtn">제출</button>
+        </div>
+      </div>
+      <div class="feedback_current">
+        <p>피드백 감사합니다!</p>
+      </div>
+    </div>
+    <!-- //modal 평점 -->
+
+    <!-- //footer -->
+    <footer id="footer">
+      <small>© aT KATI. All Rights Reserved.</small>
+      <ul class="pc-top-btn">
+        <!-- <li><a href="http://www.kati.net/index.do" target="_blank">PC버전</a></li> -->
+        <li><a href="#" role="button">맨위로</a></li>
+      </ul>
+    </footer>
+    <!-- //footer -->
+  </body>
+</html>

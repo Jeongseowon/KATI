@@ -1,0 +1,33 @@
+/* //test - page nav (개발 서버 적용시 삭제) */
+.page-hgroup{width: 100%; background: url("https://m.kati.net/images/www/common/bg_subtop.jpg") no-repeat center / cover; height: 80px;}
+.page-hgroup .wrap{position: relative; height: 100%;color: #fff;}
+.page-hgroup .page-title{ font-size: 20px; font-weight: 600; padding:30px 0 0 30px;}
+/* //test */
+
+/* mobile */
+#chat_container{max-width: 100%;padding:0;}
+.chatbox{border: 0;border-radius: 0;padding: 24px;}
+.chatbox > .inner{padding-top: 280px;justify-content: flex-start;}
+.chatbox.active > .inner{padding-top: inherit;}
+.chatbox .input_section{display: flex;flex-direction: column-reverse;position: absolute;bottom: 0;left: 0;}
+.chatbox .input_section .input_box{margin: 20px 0 0;border-radius: 30px 30px 0 0;padding: 24px 24px 20px;}
+.chatbox .input_section .disclaimer{padding: 0 24px;}
+
+.chat_content{height: calc(100% - 200px);gap: 20px;}
+.chat_content .answer_contents .info_location{flex-wrap: wrap;gap: 10px;}
+.chat_content .answer_contents .info_location .tit{margin-bottom: 0;}
+
+.chat_content .response_controls{flex-wrap: wrap;gap: 10px;flex-direction: column-reverse;align-items: flex-start;}
+.chat_content .disclaimer.ai{align-items: flex-start;}
+.chat_content .disclaimer.ai::before{margin-top: 3px;}
+
+/* 출처 및 연관질의 */
+.reference_section .reference_list li{flex-direction: column;gap: 5px;align-items: flex-start;}
+.reference_section .reference_list li span{width: 100%;}
+
+/* 모달 */
+.modal{align-items: flex-end;}
+.modal .modal_content{border-radius: 20px 20px 0 0;}
+.modal .btn_wrap{justify-content: center;}
+.modal .btn_wrap .btn{width: 50%;height: 56px;}
+.modal .feedback_current{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);font-size: 18px;width: 60%;text-align: center;}
