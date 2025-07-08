@@ -66,6 +66,31 @@ function setupFeedbackToggle(containerSelector) {
   });
 }
 
+// 채팅 스크롤 버튼 기능 추가
+function setupScrollButton() {
+  const chatBox = document.getElementById("chatScroll"); // .chat_content
+  const scrollBtn = document.getElementById("scrollBtn"); // .chat_scroll
+
+  if (!chatBox || !scrollBtn) return;
+
+  function checkScroll() {
+    const isAtBottom =
+      chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
+
+    scrollBtn.style.display = isAtBottom ? "none" : "block";
+  }
+
+  scrollBtn.addEventListener("click", () => {
+    chatBox.scrollTo({
+      top: chatBox.scrollHeight,
+      behavior: "smooth",
+    });
+  });
+
+  chatBox.addEventListener("scroll", checkScroll);
+  window.addEventListener("load", checkScroll);
+}
+
 // 피드백 모달 관련
 function setupFeedbackModal() {
   const openBtn = document.getElementById("openFeedbackModalBtn");
@@ -146,4 +171,5 @@ function setupFeedbackModal() {
 document.addEventListener("DOMContentLoaded", () => {
   setupFeedbackToggle(".feedback_btn");
   setupFeedbackModal();
+  setupScrollButton();
 });

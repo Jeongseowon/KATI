@@ -385,7 +385,7 @@
             <div class="chatbox active">
               <div class="inner">
                 <!-- 채팅시작 -->
-                <div class="chat_content">
+                <div class="chat_content" id="chatScroll">
                   <!-- 질문 메시지 -->
                   <article class="chat_message question">
                     <div class="msg_txt">인도네시아로 라면을 수출하려면 어떤 서류가 필요해?</div>
@@ -474,6 +474,8 @@
                     </div>
                     <!-- //연관질의 -->
                   </article>
+                  <!-- scroll  -->
+                  <button class="chat_scroll btn ico" id="scrollBtn" type="button">스크롤</button>
                 </div>
                 <!-- //채팅끝 -->
 
@@ -481,8 +483,10 @@
                   <div class="input_box">
                     <textarea class="prompt_input" name="prompt-textarea" placeholder="Kati에게 무엇이든 물어보세요"></textarea>
                     <div class="btn_wrap">
-                      <!-- <button class="file btn ico">파일첨부</button> -->
-                      <input type="file" class="file btn ico">
+                       <div class="file_upload btn ico">
+                        <input type="file" class="file_input">
+                        <label for="upload" class="file_label">파일 선택</label>
+                       </div>
                       <button class="submit btn ico" onclick="location.href='./sub02.html'">보내기</button>
                     </div>
                   </div>
