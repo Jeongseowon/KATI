@@ -67,6 +67,31 @@ function setupFeedbackToggle(containerSelector) {
 }
 
 // 채팅 스크롤 버튼 기능 추가
+// function setupScrollButton() {
+//   const chatBox = document.getElementById("chatScroll"); // .chat_content
+//   const scrollBtn = document.getElementById("scrollBtn"); // .chat_scroll
+
+//   if (!chatBox || !scrollBtn) return;
+
+//   function checkScroll() {
+//     const isAtBottom =
+//       chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
+
+//     scrollBtn.style.display = isAtBottom ? "none" : "block";
+//   }
+
+//   scrollBtn.addEventListener("click", () => {
+//     chatBox.scrollTo({
+//       top: chatBox.scrollHeight,
+//       behavior: "smooth",
+//     });
+//   });
+
+//   chatBox.addEventListener("scroll", checkScroll);
+//   window.addEventListener("load", checkScroll);
+// }
+
+// 채팅 스크롤 버튼 기능 추가
 function setupScrollButton() {
   const chatBox = document.getElementById("chatScroll"); // .chat_content
   const scrollBtn = document.getElementById("scrollBtn"); // .chat_scroll
@@ -77,7 +102,21 @@ function setupScrollButton() {
     const isAtBottom =
       chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
 
-    scrollBtn.style.display = isAtBottom ? "none" : "block";
+    if (isAtBottom) {
+      scrollBtn.classList.remove("show");
+      // 애니메이션이 끝나면 display: none 처리 (접근성/레이아웃 보호)
+      setTimeout(() => {
+        if (!scrollBtn.classList.contains("show")) {
+          scrollBtn.style.display = "none";
+        }
+      }, 400); // 트랜지션 시간과 맞춤
+    } else {
+      scrollBtn.style.display = "block"; // 먼저 보이게 하고
+      // 다음 프레임에 show 클래스 추가 (애니메이션 트리거)
+      requestAnimationFrame(() => {
+        scrollBtn.classList.add("show");
+      });
+    }
   }
 
   scrollBtn.addEventListener("click", () => {
