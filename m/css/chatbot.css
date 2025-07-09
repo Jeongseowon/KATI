@@ -15,7 +15,8 @@
 .chatbox .sub_tit{font-size: 16px;padding-top: 5px;}
 .chat_content .chat_message .info_txt{white-space: pre-wrap;position:relative;top:0;left:0;display: block;padding:10px 0 0 0;}
 
-.chatbox .input_section{position: sticky !important;}
+.chatbox .input_section{position: sticky !important;margin-top: 20px;}
+.chatbox .input_section.active{margin-top: 0;}
 .chatbox .input_section .input_box{margin:0; padding:20px; border-radius: 15px;}
 .chatbox .input_section .disclaimer{padding: 10px 0 0 0;font-size: 10px;}
 .chatbox .input_section .btn.submit::before{font-size: 14px;}
