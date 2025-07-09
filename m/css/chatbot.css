@@ -13,7 +13,6 @@
 
 .chatbox h1.title{padding-top:120px;font-size: 28px;}
 .chatbox .sub_tit{font-size: 16px;padding-top: 5px;}
-.chat_content .chat_message .info_txt{white-space: pre-wrap;position:relative;top:0;left:0;display: block;padding:10px 0 0 0;}
 
 .chatbox .input_section{position: sticky !important;margin-top: 20px;}
 .chatbox .input_section.active{margin-top: 0;}
@@ -23,7 +22,7 @@
 
 .chatbox .prompt_input{font-size: 16px;}
 
-.chat_content{height: calc(100% - 200px);gap: 20px;}
+.chat_content{height: 100%;gap: 20px;}
 .chat_content .answer_contents{padding-bottom: 0;}
 .chat_content .answer_contents .info_location{flex-wrap: wrap;gap: 3px;box-sizing: border-box;width: 100%;}
 .chat_content .answer_contents .info_location .tit_wrap{font-size: 14px;}
@@ -31,6 +30,8 @@
 .chat_content .answer_contents .info_location > ul li{font-size:14px;}
 .chat_content .answer_contents .info_location > ul li:not(:last-child){gap:5px;}
 .chat_content .answer_contents .info_location > ul li:not(:last-child)::after{margin-right: 5px;}
+
+.chat_content .chat_message .info_txt{white-space: pre-wrap;position:relative;top:0;left:0;display: block;padding:10px 0 0 0;}
 
 .chat_content .chat_scroll{bottom: 15px;min-height: 30px;}
 
