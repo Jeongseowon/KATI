@@ -84,7 +84,7 @@ function setupScrollButton() {
         if (!scrollBtn.classList.contains("show")) {
           scrollBtn.style.display = "none";
         }
-      });
+      }, 200);
     } else {
       scrollBtn.style.display = "block";
       requestAnimationFrame(() => {
