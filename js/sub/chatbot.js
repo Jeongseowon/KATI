@@ -67,58 +67,32 @@ function setupFeedbackToggle(containerSelector) {
 }
 
 // 채팅 스크롤 버튼 기능 추가
-// function setupScrollButton() {
-//   const chatBox = document.getElementById("chatScroll"); // .chat_content
-//   const scrollBtn = document.getElementById("scrollBtn"); // .chat_scroll
-
-//   if (!chatBox || !scrollBtn) return;
-
-//   function checkScroll() {
-//     const isAtBottom =
-//       chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
-
-//     scrollBtn.style.display = isAtBottom ? "none" : "block";
-//   }
-
-//   scrollBtn.addEventListener("click", () => {
-//     chatBox.scrollTo({
-//       top: chatBox.scrollHeight,
-//       behavior: "smooth",
-//     });
-//   });
-
-//   chatBox.addEventListener("scroll", checkScroll);
-//   window.addEventListener("load", checkScroll);
-// }
-
-// 채팅 스크롤 버튼 기능 추가
 function setupScrollButton() {
   const chatBox = document.getElementById("chatScroll"); // .chat_content
   const scrollBtn = document.getElementById("scrollBtn"); // .chat_scroll
 
   if (!chatBox || !scrollBtn) return;
 
-  function checkScroll() {
-    const isAtBottom =
-      chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
+function checkScroll() {
+  const isAtBottom =
+    chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
 
-    if (isAtBottom) {
-      scrollBtn.classList.remove("show");
-      // 애니메이션 끝나면 display: none
-      setTimeout(() => {
-        if (!scrollBtn.classList.contains("show")) {
-          scrollBtn.style.display = "none";
-        }
-      }, 400);
-    } else {
-      // 1. display: block으로 먼저 보이게 함
-      scrollBtn.style.display = "block";
-      // 2. 다음 프레임에 show 클래스 추가 (애니메이션 트리거)
-      requestAnimationFrame(() => {
-        scrollBtn.classList.add("show");
-      });
-    }
+  if (isAtBottom) {
+    scrollBtn.classList.remove("show");
+    setTimeout(() => {
+      if (!scrollBtn.classList.contains("show")) {
+        scrollBtn.style.display = "none";
+      }
+    }, 400);
+  } else {
+    //display: block으로 보이게
+    scrollBtn.style.display = "block";
+    //show 클래스 추가
+    setTimeout(() => {
+      scrollBtn.classList.add("show");
+    }, 30); // 30~50ms 정도면 충분
   }
+}
 
   scrollBtn.addEventListener("click", () => {
     chatBox.scrollTo({
