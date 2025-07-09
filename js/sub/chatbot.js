@@ -68,8 +68,8 @@ function setupFeedbackToggle(containerSelector) {
 
 // 채팅 스크롤 버튼 기능 추가
 function setupScrollButton() {
-  const chatBox = document.getElementById("chatScroll"); // .chat_content
-  const scrollBtn = document.getElementById("scrollBtn"); // .chat_scroll
+  const chatBox = document.getElementById("chatScroll"); // 채팅 박스 (스크롤 대상)
+  const scrollBtn = document.getElementById("scrollBtn"); // 스크롤 버튼
 
   if (!chatBox || !scrollBtn) return;
 
@@ -78,21 +78,15 @@ function setupScrollButton() {
       chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
 
     if (isAtBottom) {
+      // 스크롤이 맨 아래면 버튼 숨김 (.show 제거)
       scrollBtn.classList.remove("show");
-      // 애니메이션 끝나면 display: none
-      setTimeout(() => {
-        if (!scrollBtn.classList.contains("show")) {
-          scrollBtn.style.display = "none";
-        }
-      }, 200);
     } else {
-      scrollBtn.style.display = "block";
-      requestAnimationFrame(() => {
-        scrollBtn.classList.add("show");
-      }, 400);
+      // 스크롤이 위쪽이면 버튼 노출 (.show 추가)
+      scrollBtn.classList.add("show");
     }
   }
 
+  // 버튼 클릭 시 스크롤을 맨 아래로 이동
   scrollBtn.addEventListener("click", () => {
     chatBox.scrollTo({
       top: chatBox.scrollHeight,
@@ -100,9 +94,11 @@ function setupScrollButton() {
     });
   });
 
+  // 스크롤 발생 시 버튼 상태 확인
   chatBox.addEventListener("scroll", checkScroll);
   window.addEventListener("load", checkScroll);
 }
+
 
 
 // 피드백 모달 관련

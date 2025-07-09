@@ -33,7 +33,7 @@
 
 .chat_content .chat_message .info_txt{white-space: pre-wrap;position:relative;top:0;left:0;display: block;padding:10px 0 0 0;}
 
-.chat_content .chat_scroll{bottom: 15px;min-height: 30px;}
+.chat_content .chat_scroll{bottom: 20px;min-height: 30px;}
 
 .chat_content .response_controls{flex-wrap: wrap;gap: 10px;flex-direction: column-reverse;align-items: flex-start;}
 .chat_content .disclaimer.ai{align-items: flex-start;}
