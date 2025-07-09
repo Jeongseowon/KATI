@@ -1,7 +1,7 @@
 /* //test - page nav (개발 서버 적용시 삭제) */
-.page-hgroup{width: 100%; background: url("https://m.kati.net/images/www/common/bg_subtop.jpg") no-repeat center / cover; height: 80px;}
+.page-hgroup{width: 100%; background: url("https://m.kati.net/images/www/common/bg_subtop.jpg") no-repeat center / cover; height: 60px;}
 .page-hgroup .wrap{position: relative; height: 100%;color: #fff;}
-.page-hgroup .page-title{ font-size: 20px; font-weight: 600; padding:30px 0 0 30px;}
+.page-hgroup .page-title{ font-size: 16px; font-weight: 600; padding:20px 0 0 20px;}
 /* //test */
 
 /* mobile */
@@ -50,3 +50,5 @@
 .modal .btn_wrap{justify-content: center;}
 .modal .btn_wrap .btn{width: 50%;height: 56px;}
 .modal .feedback_current{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);font-size: 18px;width: 60%;text-align: center;}
+
+#footer{display: none;}
