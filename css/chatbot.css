@@ -168,7 +168,8 @@
 .reference_section .btn.toggle_trigger{margin-bottom:10px ;background: var(--primary);color: rgba(var(--white)); padding: 5px 10px;border-radius: 5px;font-size: 14px;font-weight: 600;display: flex;align-items: center;}
 .reference_section .btn.toggle_trigger::after{content:"\EA78";font-family: var(--ifont);margin:0 0 0 10px;}
 .reference_section .btn.toggle_trigger.open::after{transform: rotate(180deg);transition: 0.5s ease;}
-.reference_section .reference_list{transition: height 0.8s ease;height: 0;overflow: hidden;padding-bottom:15px;}
+.reference_section .reference_list{transition: height 0.8s ease;height: 0;overflow: hidden;}
+.reference_section .reference_list.open{margin-bottom: 15px;}
 .reference_section .reference_list li{display: flex;align-items: center;background:var(--bg2);padding:16px;border-radius: 10px;gap: 24px}
 .reference_section .reference_list li:not(:last-child){margin-bottom: 10px;}
 .reference_section .reference_list .category{font-weight: 600;}
