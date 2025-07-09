@@ -104,15 +104,15 @@ function setupScrollButton() {
 
     if (isAtBottom) {
       scrollBtn.classList.remove("show");
-      // 애니메이션이 끝나면 display: none 처리 (접근성/레이아웃 보호)
+      // 애니메이션 끝나면 display: none
       setTimeout(() => {
         if (!scrollBtn.classList.contains("show")) {
           scrollBtn.style.display = "none";
         }
-      }, 400); // 트랜지션 시간과 맞춤
+      }, 400);
     } else {
-      scrollBtn.style.display = "block"; // 먼저 보이게 하고
-      // 다음 프레임에 show 클래스 추가 (애니메이션 트리거)
+      scrollBtn.style.display = "block";
+      //show 클래스 추가 
       requestAnimationFrame(() => {
         scrollBtn.classList.add("show");
       });
