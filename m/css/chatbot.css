@@ -20,7 +20,8 @@
 
 .chat_content{height: calc(100% - 200px);gap: 20px;}
 .chat_content .answer_contents{padding-bottom: 0;}
-.chat_content .answer_contents .info_location{flex-wrap: wrap;gap: 10px;box-sizing: border-box;width: 100%;}
+.chat_content .answer_contents .info_location{flex-wrap: wrap;gap: 3px;box-sizing: border-box;width: 100%;}
+.chat_content .answer_contents .info_location .tit_wrap{font-size: 14px;}
 .chat_content .answer_contents .info_location .tit{margin-bottom: 0;}
 .chat_content .answer_contents .info_location > ul li{font-size:14px;}
 .chat_content .answer_contents .info_location > ul li:not(:last-child){gap:5px;}
@@ -30,6 +31,7 @@
 .chat_content .disclaimer.ai{align-items: flex-start;}
 .chat_content .disclaimer.ai::before{margin-top: 3px;}
 
+.feedback_contents.active{margin-bottom: 20px;}
 .feedback_contents .btn{text-align: left;}
 
 /* 출처 및 연관질의 */
