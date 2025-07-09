@@ -73,26 +73,25 @@ function setupScrollButton() {
 
   if (!chatBox || !scrollBtn) return;
 
-function checkScroll() {
-  const isAtBottom =
-    chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
+  function checkScroll() {
+    const isAtBottom =
+      chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
 
-  if (isAtBottom) {
-    scrollBtn.classList.remove("show");
-    setTimeout(() => {
-      if (!scrollBtn.classList.contains("show")) {
-        scrollBtn.style.display = "none";
-      }
-    }, 400);
-  } else {
-    //display: block으로 보이게
-    scrollBtn.style.display = "block";
-    //show 클래스 추가
-    setTimeout(() => {
-      scrollBtn.classList.add("show");
-    }, 30); // 30~50ms 정도면 충분
+    if (isAtBottom) {
+      scrollBtn.classList.remove("show");
+      // 애니메이션 끝나면 display: none
+      setTimeout(() => {
+        if (!scrollBtn.classList.contains("show")) {
+          scrollBtn.style.display = "none";
+        }
+      }, 400);
+    } else {
+      scrollBtn.style.display = "block";
+      requestAnimationFrame(() => {
+        scrollBtn.classList.add("show");
+      }, 400);
+    }
   }
-}
 
   scrollBtn.addEventListener("click", () => {
     chatBox.scrollTo({
