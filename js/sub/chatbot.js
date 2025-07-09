@@ -97,8 +97,8 @@ function setupScrollButton() {
   const scrollBtn = document.getElementById("scrollBtn"); // .chat_scroll
 
   if (!chatBox || !scrollBtn) return;
-
-  function checkScroll() {
+  
+function checkScroll() {
   const isAtBottom =
     chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
 
