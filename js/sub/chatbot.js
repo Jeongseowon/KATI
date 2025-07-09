@@ -99,25 +99,28 @@ function setupScrollButton() {
   if (!chatBox || !scrollBtn) return;
 
   function checkScroll() {
-    const isAtBottom =
-      chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
+  const isAtBottom =
+    chatBox.scrollTop + chatBox.clientHeight >= chatBox.scrollHeight - 1;
 
-    if (isAtBottom) {
-      scrollBtn.classList.remove("show");
-      // 애니메이션 끝나면 display: none
-      setTimeout(() => {
-        if (!scrollBtn.classList.contains("show")) {
-          scrollBtn.style.display = "none";
-        }
-      }, 400);
-    } else {
-      scrollBtn.style.display = "block";
-      //show 클래스 추가 
-      requestAnimationFrame(() => {
-        scrollBtn.classList.add("show");
-      });
-    }
+  if (isAtBottom) {
+    scrollBtn.classList.remove("show");
+    // 애니메이션 끝나면 display: none
+    setTimeout(() => {
+      if (!scrollBtn.classList.contains("show")) {
+        scrollBtn.style.display = "none";
+      }
+    }, 400);
+  } else {
+    // show 클래스 먼저 추가해서 애니메이션 트리거
+    scrollBtn.classList.add("show");
+    // 400ms 후에 display: block 처리 (애니메이션 끝나고 보이게)
+    setTimeout(() => {
+      if (scrollBtn.classList.contains("show")) {
+        scrollBtn.style.display = "block";
+      }
+    }, 400);
   }
+}
 
   scrollBtn.addEventListener("click", () => {
     chatBox.scrollTo({
