@@ -71,7 +71,7 @@
 #chat_container *::-webkit-scrollbar{display: none;}
 
 .chatbox{display: flex;align-items: center;justify-content: center;transition: all 0.3s ease;position:relative;height:calc(100vh - 100px);border:1px solid var(--bd);background: var(--bg1); border-radius: 30px;padding:48px;box-sizing: border-box;}
-.chatbox > .inner{max-width: 768px;width:100%;display: flex; align-items: center; justify-content: center;flex-direction: column;height:100%;}
+.chatbox > .inner{max-width: 768px;width:100%;display: flex; align-items: center; justify-content: center;flex-direction: column;height:100%;box-sizing: border-box;}
 .chatbox.active > .inner{justify-content: flex-start;}
 
 /* chati main */
@@ -128,7 +128,7 @@
 }
 
 /* chati 답변내용 */
-.chat_content .answer_contents{padding:20px 0 44px 0; color: var(--main-color);font-size:16px;}
+.chat_content .answer_contents{padding:20px 0; color: var(--main-color);font-size:16px;}
 .chat_content .answer_contents > *:not(:last-child) {margin-bottom:16px;}
 .chat_content .answer_contents .doc_list dd{font-weight: 600;}
 .chat_content .answer_contents .info_location{background: var(--bg2);padding:8px 16px;display: inline-flex;align-items: center;gap: 24px;border-radius: 10px;}
